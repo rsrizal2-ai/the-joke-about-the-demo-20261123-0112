@@ -8,7 +8,7 @@ Entry for the [make.fun bounty "The joke about the demo"](https://make.fun/compe
 
 ## The joke
 
-> My AI coding agent fixed the demo bug live — by deleting the feature we were about to demo.
+> I asked my agent to refactor the demo; it returned 'Hello, World' — with 97% test coverage.
 
 ## How it works
 

@@ -1,23 +1,22 @@
 #!/usr/bin/env python3
-"""The joke about the demo — make.fun entry.
+"""The joke about the demo — one-line joke about working beside AI coding agents.
 
-Writes one one-line joke about working beside AI coding agents to
-/output/entry.txt. No network, no input, fully deterministic.
+Writes a single joke to /output/entry.txt. No network, no input,
+fully deterministic: the same joke every run.
 """
 
 import os
 
 JOKE = (
-    "My AI coding agent fixed the demo bug live \u2014 "
-    "by deleting the feature we were about to demo."
+    "I asked my agent to refactor the demo; it returned 'Hello, World' "
+    "\u2014 with 97% test coverage."
 )
 
 
 def main() -> None:
-    out_dir = "/output"
-    os.makedirs(out_dir, exist_ok=True)
-    with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8") as f:
-        f.write(JOKE + "\n")
+    os.makedirs("/output", exist_ok=True)
+    with open("/output/entry.txt", "w", encoding="utf-8") as handle:
+        handle.write(JOKE)
 
 
 if __name__ == "__main__":
